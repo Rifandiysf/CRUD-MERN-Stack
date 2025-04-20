@@ -1,0 +1,38 @@
+# Set the default behavior for all files
+* text=auto
+
+# JavaScript and React files
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.json linguist-language=JSON
+
+# CSS and styling files
+*.css linguist-language=CSS
+*.scss linguist-language=SCSS
+
+# HTML files
+*.html linguist-language=HTML
+
+# Markdown files
+*.md linguist-documentation=true
+*.mdx linguist-documentation=true
+
+# SQL files
+*.sql linguist-language=SQL
+
+# Ignore dependencies from language statistics
+node_modules/* linguist-vendored=true
+frontend/node_modules/* linguist-vendored=true
+backend/node_modules/* linguist-vendored=true
+
+# Ignore build artifacts
+build/* linguist-generated=true
+dist/* linguist-generated=true
+frontend/build/* linguist-generated=true
+frontend/dist/* linguist-generated=true
+
+# Treat configuration files appropriately
+tailwind.config.js linguist-language=JavaScript
+vite.config.js linguist-language=JavaScript
+package.json linguist-language=JSON
+package-lock.json linguist-generated=true
